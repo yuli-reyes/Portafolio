@@ -1,0 +1,772 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Prompt:wght@400;500;600&display=swap');
+
+*{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	box-sizing: border-box;	
+
+}
+
+body{
+	overflow-x: hidden;
+
+}
+
+p,li{
+	font-family: 'Lexend Deca', sans-serif;
+	font-size: 17px;
+}
+
+h1,h5{
+	font-family: 'Prompt', sans-serif;
+
+}
+
+
+
+/*ESTILOS PÁGINA INDEX.HTML*/
+
+/*menu*/
+
+.navbar{
+	background-color: rgba(0,0,0);
+	font-family: 'Prompt', sans-serif;
+	font-size: 13pt;
+
+
+}
+.navbar-item{
+	color: #FFFFFF;
+	line-height: 20px;
+}
+
+
+.nav-link{
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+
+.navbar-brand{
+	margin: auto;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #FFFFFF;
+
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+	color: #FF914D;
+}
+
+
+#seleccionado{
+	color:#FF914D;
+}
+
+/*fin menu*/
+
+/*banner*/
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-caption{
+
+	max-width: 1900px;
+	margin-left: auto;
+ 	margin-right: auto;
+ 	background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,0));
+
+
+}
+/*fin banner*/
+
+/*---Inicio de Quienes Somos----*/
+
+.cajaquienes p{
+	text-align: justify;
+}
+
+/*----Fin de Quienes Somos-------*/
+
+
+/*Inicio seccion coctel del mes */
+
+
+#coctelmes{
+
+	background-color: #fbceb2;
+}
+#coctelmes .container{
+	align-items: center;
+
+}
+#coctelmes h1{
+	padding-top:3rem;
+	text-align: center;
+}
+
+#coctelmes h2{
+	text-align: center;
+	padding-bottom: 2rem;
+
+}
+
+.card-text{
+	text-align: justify;
+
+}
+.icon1, .icon2, .icon3{
+	width: 48px;
+
+}
+.icon1, .icon2{
+	margin-right: 15px;
+}
+
+.cardmes {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border:none;
+  border-radius: 0.25rem;
+  background-color:#fbceb2;
+  align-items: center;
+}
+
+.card-body{
+	align-items: center;
+	width: 14rem;
+	padding: 20px 0px 20px 0px;
+
+}
+
+.card-img-top{
+	width: 14rem;
+	margin:0px 10px 0px 10px;
+	box-shadow: 9px 9px 8px rgba(0, 0, 0, 0.4);
+
+}
+.py-5 {
+  padding-bottom: 0rem !important;
+}
+
+/*Fin seccion coctel del mes */
+
+
+
+/*INICIO ESTILOS DE PÁGINA CATALOGO*/
+
+/* CATALOGO*/
+
+#banner1{
+
+	background-image: url(../imagenes/hielosbanner.jpg);
+	min-height: 200px;
+	max-height: 200px;
+	font-size: 400px;
+}
+
+
+.titulobebida{
+	color: #FF914D;
+	text-align: center;
+	font-weight: bold;
+}
+.infococtel{
+	text-align: center;
+	color: #5DC1B9;
+}
+
+.cajacatalogo{
+	position: relative;	
+	justify-content: center;
+	margin-top: 100px;
+	align-items: center;
+}
+.mt-4{
+	margin-top: 4.5rem!important;
+}
+
+
+.cajacatalogo .card{
+	position: relative;	
+	background: transparent;	
+	transition:0.3s ease-in-out;
+	border: none;
+} 
+ 
+.cajacatalogo .card .imgBx{
+	position: relative;
+	top: -60px;
+	z-index: 1;
+	margin: auto;
+}
+
+
+.cajacatalogo .card .imgBx img{
+	max-width: 150px;
+	width: 100%;
+	border-radius: 4px;
+}
+
+.cajacatalogo .card .content{
+	position: relative;
+	margin-top: -140px;
+	padding: 10px 15px;
+	color: #111;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+	text-align: center;
+}
+.cajacatalogo .card:hover .content{
+	visibility: visible;
+	opacity: 1;
+	margin-top: -40px;
+	transition-delay: 0.3s;
+}
+
+.cajacatalogo .card .content p{
+	text-align:justify;
+}
+.cajacatalogo .card .content h3{
+	text-align:center;
+}
+
+.cajacatalogo2{
+	position: relative;	
+	justify-content: center;
+	align-items: center;
+}
+
+
+.cajacatalogo2 .card{
+	position: relative;	
+	background: transparent;	
+	transition:0.3s ease-in-out;
+	border: none;
+} 
+ 
+.cajacatalogo2 .card .imgBx{
+	position: relative;
+	top: -60px;
+	z-index: 1;
+	margin: auto;
+}
+
+
+.cajacatalogo2 .card .imgBx img{
+	max-width: 150px;
+	width: 100%;
+	border-radius: 4px;
+}
+
+.cajacatalogo2 .card .content{
+	position: relative;
+	margin-top: -140px;
+	padding: 10px 15px;
+	text-align: center;
+	color: #111;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s ease-in-out;
+}
+.cajacatalogo2 .card:hover .content{
+	visibility: visible;
+	opacity: 1;
+	margin-top: -40px;
+	transition-delay: 0.3s;
+}
+
+
+
+/*FIN ESTILOS DE PÁGINA CATÁLOGO*/
+
+/*MODAL*/
+/* HEADER*/
+.pmodal{
+	text-align: justify;
+}
+.tmodal{
+	margin: auto;	
+}
+.modal-header #botoncerrar{
+    padding: 0;
+    margin: 0;
+}
+/*FIN HEADER*/
+
+.modal-iconos{
+	
+	justify-content: center;
+	position: relative;
+	text-align: center;
+}
+.iconos-m img{
+  width: 40px;
+}
+.iconos-m h5{
+  font-size: 12px;
+  line-height: 1;
+  margin-top: 7px;
+  align-items: flex-end;
+}
+.imagen-g{
+	text-align: center;
+}
+
+.modal-footer {
+	text-align: justify;
+	border:none;
+ 	display: flex;
+  	flex-wrap: wrap;
+ 	flex-shrink: 0;
+ 	align-items: center;
+  	justify-content: flex-end;
+ 	padding: 0.75rem;
+}
+
+.btn-primary{
+	background-color: #5DC1B9;
+	color: #FFF;
+	font-weight: bold;
+	border:1px solid #5DC1B9;
+	border-radius: 5px;
+	box-shadow: 2px 2px 8px #000000;
+	align-items:flex-start;
+
+}
+
+.btn-primary:hover{
+
+	background-color:#FF914D;
+	color: #000000;
+	border:1px solid #FF914D;
+	font-weight: bold;
+	border-radius: 5px;
+	box-shadow: 2px 2px 8px #000000;
+}
+.btn-secondary{
+	background-color: #5DC1B9;
+	color: #FFF;
+	font-weight: bold;
+	border:1px solid #5DC1B9;
+	border-radius: 5px;
+	box-shadow: 2px 2px 8px #000000;
+	
+
+}
+.btn-secondary a{
+   text-decoration: none;
+   color: #FFF;
+}
+.btn-secondary a:hover{
+   text-decoration: none;
+   color: #000000;
+}
+.btn-secondary:hover{
+
+	background-color:#FF914D;
+	color: #000000;
+	border:1px solid #FF914D;
+	font-weight: bold;
+	border-radius: 5px;
+	box-shadow: 2px 2px 8px #000000;
+}
+
+/*-------FIN DE MODAL-----*/
+
+/*PEDIDOS*/
+
+/*PEDIDOS*/
+
+.contactpedido{
+		padding: 8%;
+    background-image: url(../imagenes/fondopedidos.jpg);
+    background-size: cover;
+	}
+
+	.fondotupedido {
+		background-image: url(../imagenes/fonpedidos.jpg);
+		background-size: cover;
+		padding: 4%;
+		border-top-left-radius: 0.5rem;
+		border-bottom-left-radius: 0.5rem;
+	}
+
+
+.contact-info2 h3 {
+ text-align: justify;
+}
+
+.contact-info2 ul li{
+	list-style: none;
+	text-align: justify;
+}
+
+.contact-info2 ul {
+	padding: 0px;
+	margin-top: 20px;
+}
+.contact-info2 li {
+	padding: 0px;
+	margin-top: 20px;
+}
+
+.estilonombre {
+	width: 14rem;
+}
+
+.input-group-text i {
+color: #FF914D;
+}
+
+.form-select:focus{
+	color:black;
+  background-color: #fff;
+  border-color: black;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255,125,38,0.4);
+}
+
+
+
+/*FIN ESTILOS PEDIDOS*/
+
+/*FIN ESTILOS PEDIDOS*/
+
+
+/*INICIO ESTILOS CONTACTO*/
+.contact{
+		padding: 10%;
+        background: linear-gradient(rgba(255,125,38,0.4), rgba(255,125,38,0.7));
+	}
+    
+    .fondocontacto{
+    	background-image: url(../imagenes/fondohielos.jpg);
+    }
+	.amarillo{
+		background: #FF914D;
+		padding: 4%;
+		border-top-left-radius: 0.5rem;
+		border-bottom-left-radius: 0.5rem;
+	}
+
+	.contact-info {
+    padding-bottom: 20px;
+    text-align: center;
+    }
+
+	.contact-info iframe {
+		width: 361px;
+  	}
+	.contact-info img{
+	  padding: 20px;
+	}
+	
+	.blanco{
+		background: #fff;
+		padding: 3%;
+		border-top-right-radius: 0.5rem;
+		border-bottom-right-radius: 0.5rem;
+	}
+
+
+	.contact-form {
+		margin: 10px auto;
+	}
+
+	.contact-form label{
+		font-weight:600;
+		padding: 5px;
+	}
+
+	.contact-form input{
+		padding: 5px;
+	}
+	.contact-form button{
+		background: #5DC1B9;
+		color: #fff;
+		font-weight: 600;
+		width: 25%;
+		box-shadow:  3px 3px 5px black;
+		margin-top: 20px;
+	}
+	.contact-form button:focus{
+		box-shadow:none;
+	}
+
+	.contact-form button:hover{
+		background-color: #FF914D;
+	}
+
+	.concactofondo{
+		background-image: url(../imagenes/fondohielos.jpg);
+	}
+
+	.success {
+    border: 3px solid lime;
+}
+ 
+.error {
+    border: 3px solid red;
+
+}
+
+.form-control:focus {
+  color:black;
+  background-color: #fff;
+  border-color: black;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(255,125,38,0.4);
+}
+
+
+/*------------------ESTILOS MODAL REGISTRO*----------------*/
+
+
+.modal-header .btn-close {
+  padding: 0.5rem 0.5rem;
+  margin: -0.5rem -0.5rem -0.5rem auto;
+}
+.modal-header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.textregis1,.textregis2{
+	text-align: center;
+
+}
+.textregis1{
+	color: #FF7D26;
+	font-weight: 700;
+}
+
+.textregis2{
+	margin: 0px 35px;
+}
+
+.textcolor1{
+	font-weight:700;
+}
+
+.closeregis{
+	background-color: white;
+}
+
+.modal-border{
+	border-bottom: none;
+}
+
+.tamanomodal{
+	max-width: 900px;
+	width: 100%;
+
+}
+
+.form-check{
+	padding-left: 0px;
+}
+
+.color-1{
+	background-color: #FF914D;
+	background-image: url(../imagenes/fondocolor1.jpg);
+}
+
+/*----------------Estilos del texto de validacion de Usuario y Clave del Login--------------------*/
+
+#errordatos, #feedbackuser, #feedbackpass{
+	font-weight: 600;
+	color: #9B9B9B;
+
+}
+
+/*---------------*/
+.color-2 {
+background-color: white;
+padding: 2rem;
+}
+
+#formregistro{
+	padding-top: 20px;
+
+}
+
+.color1-regis{
+	background-image: url(../imagenes/fondoregis1.jpg);
+	background-image: cover;
+	width: 100%;
+
+}
+
+.soymiem{
+	text-align: center;
+	margin: 0px;
+}
+
+.enlace{
+	color: #FF914D;
+	font-size: 18px;
+	font-weight: 500;
+	margin: 0px;
+}
+
+.enlace:hover{
+	color: #5DC1B9;
+}
+
+.botonregis{
+		align-items: center;
+		  display: flex;
+		  justify-content: center;
+}
+.botonregis button{
+	margin-top: 40px;
+	font-size: 18px;
+	font-weight: 600;
+	color: #FFFFFF;
+	width: 40%;
+	margin: 20px auto;	
+	padding: 10px;
+	border-radius: 6px;
+	background: #5DC1B9;
+	box-shadow:  2px 2px 4px black;
+		
+}
+
+.botonregis button:hover{
+		background-color: #FF914D;
+		color: #000000;
+	}
+
+.signup-form label{
+	color:#000000;
+	font-weight: bold;
+
+}
+.fondonegro{
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 1;
+	padding: 30px;
+	border-radius: 5%;
+}
+
+
+.no-gutters{
+	--bs-gutter-x: 0;
+  --bs-gutter-y: 0;
+
+}
+
+/*section redes sociales*/
+#cajaredsocial{
+	background-image: url(../imagenes/fondofooter.jpg);
+	color: white;
+	text-align: center;
+}
+
+#cajaredsocial h5{
+	font-size: 20px;
+	text-align: center;
+}
+
+.iconosocial{
+	justify-content: center;
+	width:48px;
+	height:48px;
+	margin:10px;
+}
+
+.iconospago img{
+	margin: 10px;
+}
+
+#cajaredsocial .fondoredes{
+
+	background-color: rgba(0,0,0,0.7);
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+/*fin section redes sociales*/
+
+/*footer*/
+
+footer{
+	color: white;
+	text-align: center;
+	background-color: rgba(0,0,0);
+}
+
+
+/*fin del footer*/
+
+/*section medios de pago*/
+
+#cajapagos h5{
+	font-size: 20px;
+	text-align: center;
+}
+
+
+#cajapagos .fondoredes{
+
+	background-color: rgba(0,0,0,0.7);
+	padding-top: 50px;
+	padding-bottom: 30px;
+}
+/*fin section medios de pago*/
+
+/*inicio section terminos y condiciones*/
+.menu{
+	width: 100%;
+}
+
+.menu ul{
+	list-style: none;
+}
+.menu >li{
+	display: inline-block;
+	max-width: 170px;
+	width: 100%;
+	text-align: center;
+	line-height: 30px;
+	border-right: 1px solid #FFFFFF;
+	font-size: 14px;
+}
+.menu li >a{
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+/*fin section terminos y condiciones*/
+
+/*FIN DE ESTILOS PÁGINA INDEX.HTML*/
+/*media siempre van al final de la Hoja de estilos*/
+
+
+ @media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    line-height: 80px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+
+
+
+
+

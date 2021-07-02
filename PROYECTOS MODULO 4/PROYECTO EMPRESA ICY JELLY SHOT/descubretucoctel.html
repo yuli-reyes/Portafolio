@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+	<meta charset="utf-8">
+	<title>Mi perfil-Icy Jelly Shot </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilosusuario.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark align-bottom">
+  <div class="container-fluid"><!--visible-->
+        <a class="navbar-brand d-lg-none" href="index.html"><img src="imagenes/logo.png" width="80px"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul  class="visitado navbar-nav mb-2 mb-lg-0 mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="userindex.html" aria-current="page" target="_self">Conócenos</a>
+            </li>
+             <li class="nav-item">
+              <a class="nav-link" href="usercatalogo.html" target="_self">Catálogo</a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link" href="tupedido.html" target="_self">Tu Pedido</a>
+            </li>
+            <a class="navbar-brand d-none d-lg-block mx-auto" href="userindex.html"><img src="imagenes/logo.png" width="80px"></a>
+         
+            <li class="nav-item">
+              <a class="nav-link" href="usercontacto.html" target="_self">Contacto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link"  href="miperfil.html" id="seleccionado"><i class="far fa-user"></i> Mi perfil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" ><i class="fas fa-door-open"></i>Salir</a>
+            </li>
+          </ul>
+        </div>
+  </div>
+</nav>
+<div class="container-fluid">
+	<div class="row min-vh-100">
+		<div class="menuop col-12 col-md-4 col-lg-3">
+			<div class="imagenmenu">
+				<img src="imagenes/usuario.png" width="200px" class="img-fluid">
+			</div>
+			
+			<div class="botones d-grid gap-2">
+				<a href="miperfil.html" role="button" class="btn btn-primary">Mis Datos</a>
+				<a href="mispedidos.html" role="button" class="btn btn-primary">Mis Pedidos</a>
+				<a href="descubretucoctel.html" role="button" id="elegido" class="btn btn-primary">Descubre tu cóctel</a>
+	
+			</div>
+		</div>
+
+		 <div class="cajam col-12 col-md-8 col-lg-9">
+			 <h2>El cóctel perfecto</h2>
+			   <div class="card">
+			      <div class="card-body">
+              <h5>¡Descubre que cóctel perfecto para ti! Escoge una fruta, un licor y da clic en el icono de Icy Jelly Shot</h5>
+
+              <div class="row">
+                <div class="col-sm-12 col-md-6 col-lg-6 mt-3">
+                   <select class=" form-select form-select-sm selectrecomendacion" id="fruta">
+                    <option selected>Fruta</option>
+                    <option value="1">Naranja</option>
+                    <option value="2">Uva</option>
+                    <option value="3">Limón</option>
+                    <option value="4">Maracuyá</option>
+                    <option value="5">Granadina</option>
+                   </select>
+                 </div>
+               
+             <div class="col-sm-12 col-md-6 col-lg-6 mt-3">
+               <select class=" col-sm-12 col-md-6 col-lg-6 form-select form-select-sm selectrecomendacion" id="licor" >
+                  <option selected>Licor</option>
+                  <option value="1">Tequila</option>
+                  <option value="2">Vodka</option>
+                  <option value="3">Convier</option>
+                  <option value="4">Ginebra</option>
+                  <option value="5">Whisky</option>
+                </select> 
+             </div>              
+            </div>
+
+            <div class="  icono1 mt-2 ">
+               <input type="image" src="imagenes/logo.png" id="btnrecomendacion" class="img-fluid">
+            </div>
+            <div class="row">
+                <div  id="cajaresp" class="col-sm-12 col-md-12 col-lg-6">
+                </div>
+            </div>
+		     </div>
+	   </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/recomendaciones.js"></script>
+</body>
+</html>

@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Prompt:wght@400;500;600&display=swap');
+
+*{
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box; 
+
+}
+
+body{
+  overflow-x: hidden;
+
+}
+
+p,li{
+  font-family: 'Lexend Deca', sans-serif;
+  font-size: 17px;
+}
+
+h1,h5{
+  font-family: 'Prompt', sans-serif;
+
+}
+
+
+
+/*ESTILOS PÁGINA INDEX.HTML*/
+
+/*menu*/
+
+.navbar{
+  background-color: rgba(0,0,0);
+  font-family: 'Prompt', sans-serif;
+  font-size: 13pt;
+
+
+}
+.navbar-item{
+  color: #FFFFFF;
+  line-height: 20px;
+}
+
+
+.nav-link{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
+.navbar-brand{
+  margin: auto;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #FFFFFF;
+
+}
+
+.navbar-dark .navbar-nav .nav-link:hover{
+  color: #FF914D;
+}
+
+
+#seleccionado{
+  color:#FF914D;
+}
+
+/*fin menu*/
+
+/*banner*/
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-inner{
+  margin-top: 100px;
+}
+
+.carousel-caption{
+
+  max-width: 1900px;
+  margin-left: auto;
+  margin-right: auto;
+  background: linear-gradient(to right, rgba(0,0,0,0), rgba(0,0,0,1), rgba(0,0,0,0));
+
+
+}
+
+/*Menu opciones Usuario*/
+
+
+.menuop{
+
+	background-color: #FF914D;
+  padding-bottom: 60px;
+}
+
+#elegido{
+  color: #fff;
+  font-weight: bold; 
+  background-color: #5DC1B9;
+}
+
+.imagenmenu{
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+
+}
+
+.cajam{
+	background:url(../imagenes/fondoice.jpg);
+	background-size: cover;	
+	background-repeat: no-repeat;
+}
+
+.cajam h1{
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+.botones{
+
+	margin-top: 20px;
+}
+
+
+.btn-primary {
+  color: #FF914D;
+  font-weight: bold;
+  background-color: white;
+  border:none;
+  font-weight: bold; 
+ }
+
+.btn-primary:hover {
+  color: #fff;
+  font-weight: bold; 
+  background-color: #5DC1B9;
+  border:none;
+}
+
+/*FIN MENU*/
+
+
+/*INFO AL LADO DE MENU*/
+.cajam{
+  padding-top: 50px;
+}
+.cajam h2{
+
+	text-align: center;
+	color: white;
+	padding-top: 20px;
+	text-shadow: 3px 3px 5px #000000; 
+
+}
+.card{
+	margin: 100px auto;
+	margin-top: 50px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	max-width: 700px;
+	word-wrap: break-word;
+  background-color: rgba(225,225,225,0.7);
+	background-clip: border-box;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	border-radius: 0.25rem;
+	box-shadow: 3px 3px 8px #000;
+  text-align: center;
+  font-weight: 500;
+
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+}
+
+
+#btn-guardar{
+  margin-top: 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #FFFFFF;
+  width: 30%;
+  border-radius: 6px;
+  margin: 20px auto;  
+  padding: 10px;
+  background: #5DC1B9;
+  box-shadow:  2px 2px 4px black;
+    
+}
+#btn-guardar:hover{
+    background-color: #FF914D;
+    color: #000000;
+  }
+
+/*INICIO ESTILO RECOMENDACIONES*/
+ 
+ .selectrecomendacion{
+  width: 12rem;
+  border-radius:7px;
+  box-shadow: 5px 5px 5px black;
+  text-align-last: center;
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+ 
+}
+
+#btnrecomendacion{
+      width: 100px;
+}
+
+#cajaresp{
+  visibility: hidden;
+  padding-top: 10px;
+  opacity:0;
+  /*border: 1px solid #FF7D26;*/
+  border-radius: 8px;
+  margin:auto;
+  /*width: 500px;*/
+  height: 230px;
+  /*background-image: linear-gradient(to right, rgba(255, 145, 77,0.5) , rgba(196,196,196,0.5));*/
+  text-align:center;
+  justify-content:middle;
+  font-size: 40px;
+}
+/*FIN ESTILO RECOMENDACIONES*/
+
+
+/*INICIO MIS PEDIDOS*/
+.cajam{
+  padding-top: 50px;
+}
+.cajam h2{
+
+  text-align: center;
+  color: white;
+  padding-top: 20px;
+  text-shadow: 3px 3px 5px #000000; 
+
+}
+.card1{
+  margin: 100px auto;
+  margin-top: 70px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: rgba(225,225,225,0.7);
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  box-shadow: 3px 3px 8px #000;
+  font-weight: 500;
+
+}
+
+.card-title{
+  font-size: 26px;
+}
+
+.card1 h4 h5{
+  text-align: center;
+}
+
+.card1 p {
+  text-align: justify;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+}
+.text-muted {
+    color: #525355!important;
+}
+
+
+/*FIN MIS PEDIDOS*/
+
+
+
+/*FIN INFO AL LADO DE MENU*/
+
+
+/*FIN DE ESTILOS PÁGINA INDEX.HTML*/
+/*media siempre van al final de la Hoja de estilos*/
+
+
+ @media (min-width: 992px){
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    line-height: 80px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+

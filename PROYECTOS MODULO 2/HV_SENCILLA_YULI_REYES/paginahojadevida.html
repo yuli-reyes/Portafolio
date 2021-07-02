@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+	<meta charset="utf-8">
+	<meta name="author" content="Yuli Reyes">
+	<meta name="description" content="Formulario Hoja de Vida"/>
+	<title>Hoja de Vida Yuli Reyes</title>
+</head>
+<body>
+	<table border="1" align="center">
+	<tr>
+		<th><a href="paginaprincipal.html"target="_self"><strong><blockquote>Acerca de mi</blockquote></strong></th>
+		<th><a href="paginahorario.html"target="_self"><strong><blockquote>Horario</blockquote></strong></th>
+		<th><a href="paginahojadevida.html"target="_self"><strong><blockquote>Hoja de Vida</blockquote></strong></th>
+	</tr>
+	<tr>
+	</table>
+	<form name="formulariohv" action="respuestaformulario.html" method="post" target="_blank">
+	<h1 align="center">HOJA DE VIDA</h1>
+
+	<label for="datospersonales"><h2>Datos Personales</h2></label><br>
+	<textarea rows="5" cols="100" name="datospersonales" size="250"></textarea><br><br>
+
+	<label for="foto"> Suba aquí su foto</label>
+	<input type="file" name="foto"><br><br>
+
+	<label for="formulario"><strong>Nombre</strong></label>
+	<input type="text" name="Nombre" required="required" placeholder="Nombre" max="50"><br><br>
+
+	<label for="formulario"><strong>Apellido</strong></label>
+	<input type="text" name="apellido" required="required" placeholder="Apellido" max="50"><br><br>
+
+	<label for="hojadevida">Fecha de Nacimiento</label>
+	<input type="date" name="fecha"><br><br>
+
+	<label for="lugar"><strong>Lugar de Nacimiento</strong></label>
+	<input type="text" name="lugarnacimiento" required="required" placeholder="Lugar de Nacimiento"max="50"><br><br>
+
+	<label for="tdocumento"><strong>Tipo de Documento</strong></label>
+	<select name="tipodocumento">
+		<option selected="selected" value="0">Seleccione</option>
+		<option value="1">Tarjeta de Identidad</option>
+		<option value="2">Cédula de Ciudadanía</option>
+		<option value="3">Cédula de Extranjería</option>
+		<option value="4">Pasaporte</option>
+	</select><br><br>
+	<label for="ndocumento"><strong>Número de Documento</strong></label>
+	<input type="texto" name="ndocumento"required="required" placeholder="Número de Documento" max="20"><br><br>
+
+	<label for="sexo">Indique su género</label>
+	<input type="radio" name="genero">Masculino
+	<input type="radio" name="genero">Femenino<br><br>
+
+	<label for="tiposangre">Seleccione su tipo de sangre</label>
+	<select name="tiposangre">
+		<option selected="selected" value="0">Seleccione</option>
+		<option value="1">O-</option>
+		<option value="2">O+</option>
+		<option value="3">A-</option>
+		<option value="4">A+</option>
+		<option value="5">B-</option>
+		<option value="6">B+</option>
+		<option value="7">AB-</option>
+		<option value="8">AB+</option>
+	</select><br><br>
+	<label for="direccion"><strong>Ingrese su dirección</strong></label>
+	<input type="text" name="direccion" required="required" placeholder="Dirección" max="50"><br><br>
+
+	<label for="telefono">No. Telefónico</label>
+	<input type="tel" name="telefono" placeholder="No. Teléfonico" max="20"><br><br>
+
+	<label for="correo">Digite su correo electrónico</label>
+	<input type="email" name="email" required="required" placeholder="Correo Electrónico" max="50"><br><br>
+
+	<h2>Datos Académicos</h2>
+	<h3>Estudios Secundarios</h3>
+
+	<label for="colegio"><strong>Ingrese el nombre del colegio</strong></label>
+	<input type="text" name="colegio" required="required" placeholder="Nombre del colegio" max="100"><br><br>
+
+	<label for="titulo"><strong>Titulo Obtenido</strong></label>
+	<input type="text" name="titulo" required="required" placeholder="Titulo Obtenido" max="100"><br><br>
+
+	<label for="estado">Graduado</label>
+	<input type="radio" name="estado">Si
+	<input type="radio" name="estado">No<br><br>
+
+	<label for="fechagrado">Fecha de Graduación</label>
+	<input type="date" name="fechagrado"><br><br>
+
+	<h3>Estudios de Educación Superior</h3>
+	<label for="institucion"><strong>Digite el nombre de la institución</strong></label>
+	<input type="text" name="institucion" required="required" placeholder="Nombre de la Institucion" max="100"><br><br>
+
+	<label for="maximotitulo"><strong>Digite el máximo título obtenido</strong></label>
+	<input type="text" name="maximotitulo" required="required" placeholder="Máximo Titulo Obtenido" max="100"><br><br>
+
+	<label for="tipotitulo">Seleccione el Tipo de Titulo</label>
+	<select name="tipotitulo">
+	<option selected="selected" value="0" >Seleccione</option>
+	<option value="1">Técnico</option>
+	<option value="2">Tecnólogo</option>
+	<option value="3">Profesional</option>
+	</select><br><br>
+
+	<label for="graduado">Graduado</label>
+	<input type="radio" name="graduado">Si
+	<input type="radio" name="graduado">No<br><br>
+
+	<label for="fgrado">Fecha de Graduación</label>
+	<input type="date" name="fgrado"><br><br>
+
+	<h3>Estudios de Postgrado</h3>
+	<label for="nombreinstitucion"><strong>Nombre de la Institución</strong></label>
+	<input type="text" name="nombreinstitucion" required="required" placeholder="Nombre de la Institución" max="100"><br><br>
+
+	<label for="maxtitulopost"><strong>Máximo Titulo de Postgrado</strong></label>
+	<input type="text" name="maxtitulopost" required="required" placeholder="Máximo Titulo de Postgrado" max="100"><br><br>
+
+	<label for="tipopost">Seleccione el Tipo de Titulo</label>
+	<select>
+		<option selected="selected" value="0">Seleccione</option>
+		<option value="1">Especialización</option>
+		<option value="2">Maestría</option>
+		<option value="3">Doctorado</option>
+	</select><br><br>
+
+	<label for="graduadopost">Graduado</label>
+	<input type="radio" name="graduadopost">Si
+	<input type="radio" name="graduadopost">No<br><br>
+
+	<label for="fgradopost">Fecha de Graduación</label>
+	<input type="date" name="fgradopost"><br><br>
+
+	<h2>Experiencia Laboral</h2>
+	<label for="nombreempresa">Ingrese el nombre de la Empresa</label>
+	<input type="text" name="nombreempresa" placeholder="Nombre de la Empresa" max="100"><br><br>
+
+	<label for="cargo">Ingrese el Cargo</label>
+	<input type="text" name="cargo" placeholder="Cargo" max="100"><br><br>
+
+	<label for="fechaingreso">Fecha de ingreso a la empresa</label>
+	<input type="date" name="fechaingreso"><br><br>
+
+	<label for="fecharetiro">Fecha de retiro de la empresa</label>
+	<input type="date" name="fecharetiro"><br><br>
+
+	<label for="nombrejefe">Nombre del jefe inmediato</label>
+	<input type="text" name="nombrejefe" placeholder="Nombre del jefe inmediato" max="100"><br><br>
+
+	<label for="telefonoempresa">Número del teléfono de la empresa</label>
+	<input type="tel" name="telefonoempresa" placeholder="Número de la empresa" max="20"><br><br>
+
+	<input type="submit" name="Enviar Perfil">
+	<input type="reset" name="Restablecer">
+</form>	
+</body>
+</html>

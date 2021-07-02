@@ -1,0 +1,41 @@
+body{
+	background-image: url(../imagenes/fondofiguras.jpg);
+}
+
+
+.modal-header{
+
+	background-color: #0000FF;
+	color: #FFFFFF;
+}
+
+.modal-body{
+	background-color: #FFFFFF;
+
+
+}
+
+.modal-footer{
+	background-color: #FFFFFF;
+
+}
+
+.titulopagina{
+	text-align: center;
+	margin:20px 0px 40px 0px;
+
+}
+
+.card{
+
+	margin: 10px auto;
+}
+
+.card-body{
+	text-align: center;
+}
+
+.card-imagen{
+
+	margin-bottom: 10px;
+}

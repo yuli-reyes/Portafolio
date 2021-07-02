@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+	<meta charset="utf-8">
+	<title>Programa de Ejercicios</title>
+	<link rel="shortcut icon" href="imagenes/icono.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.rtl.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.rtl.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-reboot.rtl.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-utilities.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-utilities.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-utilities.rtl.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-utilities.rtl.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.rtl.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.rtl.min.css">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+<div class="container-fluid">
+	<div class="row min-vh-100">
+		<div class="menuop col-md-3">
+			<img src="imagenes/javascript.png" class="img-fluid">
+			<div class="botones d-grid gap-2">
+				<a href="index.html" role="button" class="btn btn-primary">Ejercicio 1</a>
+				<a href="ejercicio2.html" role="button" class="btn btn-info">Ejercicio 2</a>
+				<a href="ejercicio3.html" role="button" class="btn btn-primary">Ejercicio 3</a>
+				<a href="ejercicio4.html" role="button" class="btn btn-info">Ejercicio 4</a>
+				<a href="ejercicio5.html" role="button" class="btn btn-primary">Ejercicio 5</a>			
+			</div>
+		</div>
+
+		<div class="cajam col-md-9">
+			<h1>Conversor de Temperatura</h1>
+			<div class="card" style="width: 18rem;">
+			  <div class="card-body">
+
+			  	<form>
+			  		<div class="mb-3">
+				  		<label for="grados" class="form-label">Temperatura</label>
+				  		<input type="number" class="form-control" id="grados" placeholder="Ingrese el valor en grados" >
+				  	</div>
+
+				  	<div class="mb-3" >
+
+				  		<select class="form-select" id="opcion1">
+				  			<option selected>Convertir de</option>
+				  			<option value="C">Grado Celcius o Centígrado</option>
+				  			<option value="F">Grado Fahrenheit</option>
+				  			<option value="K">Grado Kelvin</option>
+				  		</select>
+				  	</div>
+
+				  	<div class="mb-3">
+
+				  		<select class="form-select" id="opcion2">
+				  			<option selected>Pasar a</option>
+				  			<option value="C">Grado Celcius o Centígrado</option>
+				  			<option value="F">Grado Fahrenheit</option>
+				  			<option value="K">Grado Kelvin</option>
+				  		</select>
+
+				  	</div>
+			  	
+			  		<div class="d-grid gap-2">
+			  			<button class="btn btn-danger" type="submit" onclick= "calcularGrado()">Calcular</button>  			<!---<a href="#" class="btn btn-primary">¿Soy un botón o un enlace?</a>--->
+
+			  		</div>
+				</form>
+			  </div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+<script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.esm.js"></script>
+<script type="text/javascript" src="js/bootstrap.esm.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

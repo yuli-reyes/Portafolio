@@ -1,0 +1,59 @@
+
+
+nav{
+	max-width: 1024px;
+	width: 100%;
+	margin: auto;
+	background-color: #8FA6CD;
+}
+
+
+.menu{
+		list-style: none;
+		padding: 0;
+}
+
+
+.item{
+	line-height: 2.5;
+	font-weight: 500;
+	text-align:center;
+	color: white;
+	font-size: 20px;
+}
+
+.item:hover{
+	background-color: #4B4798;	
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+
+}
+
+.item a{
+	display: block;
+	color: white;
+	text-decoration: none;
+
+}
+.active{
+	background-color: #0A0747;
+}
+
+
+@media screen and (min-width: 768px) {
+
+ .menu{
+ 	display: flex;
+   flex-direction: row;
+   margin: 0;
+   padding: 0;
+ }
+
+ .item{
+  	flex-grow: 1;
+	}
+
+
+
+}

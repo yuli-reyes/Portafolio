@@ -1,0 +1,60 @@
+footer{
+	max-width: 1024px;
+	width: 100%;
+	background-color: #413F6C;
+	margin: auto;
+}
+
+.social{
+	display: flex;
+	flex-direction: column;
+	padding: 30px;
+	margin: auto;
+}
+
+.textoicon{
+	color: white;
+}
+
+
+.cajaitem{
+		padding-bottom: 10px;
+}
+
+footer .social i {
+  font-size: 18px;
+  display: inline-block;
+  background: #EE495D;
+  color: #eee;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+
+footer .social .cajaitem2 i:hover {
+  background: #8FA6CD;
+  color: #fff;
+}
+
+
+
+@media screen and (min-width:768px){
+
+	.social{
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+
+	}
+
+	.cajaitem{
+	margin-right: 50px;
+	padding-bottom: 10px;
+}
+}

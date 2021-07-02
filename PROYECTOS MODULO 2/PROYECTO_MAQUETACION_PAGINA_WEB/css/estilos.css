@@ -1,0 +1,564 @@
+*{
+	margin: 0;
+	border: 0;
+	padding: 0;
+	list-style: none;
+	}
+
+body{
+	background-image:url(../imagenes/background.jpg);
+	font-family: sans-serif;	
+}
+
+header{
+	max-width: 1000px;
+	width: 100%;
+	background-color: rgb(25,25,25);
+	max-height: 100px;
+	height: 100%;
+	margin: auto;
+}
+
+/*Menu de todas las páginas*/
+.logo{
+	display: flex;
+	padding: 20px;
+	justify-content: space-between;
+}
+.logo img{
+	width:188px;
+	height:45px;
+}
+
+.botones{
+	border-radius: 5px;
+	margin:10px;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 15px;
+	color: #FFFFFF;
+	background-color: rgb(17,59,53);
+}
+
+.botones:hover{
+	color: rgb(17,59,53);
+	background-color: #FFFFFF; 
+}
+
+.menu{
+	max-width: 1000px;
+	width: 100%;
+	background-color: rgb(17,59,53);
+	max-height: 45px;
+	height: 100%;
+	margin: auto;
+	border-bottom: 1px solid #FFFFFF;
+}
+
+.menu li{
+	display: inline-block;
+	max-width: 160px;
+	width: 100%;
+	text-align: center;
+	line-height: 45px;
+	border-right: 1px solid #FFFFFF ;
+}
+
+.menu li a{
+	color: #FFFFFF;
+	text-decoration: none;
+	
+}
+.menu li a:hover{
+	color: #EAEAEA;
+}
+
+.submenu{
+	position: absolute;
+	max-width: 160px;
+	width: 100%;
+	visibility: hidden;
+	text-align: center;
+
+}
+.submenu li{
+	line-height: 45px;
+}
+
+.submenu li a{
+	display: block;
+	max-width: 160px;
+	width: 100%;
+	background-color: #EAEAEA;
+	color: rgba(17,59,53);
+}
+.submenu li a:hover{
+	background-color: rgba(17,59,53);
+	color: #EAEAEA;
+}
+
+.menu li:hover .submenu{
+	visibility: visible;
+	max-width: 160px;
+	width: 100%;
+}
+
+/*Final del Menú*/
+
+/*ESTILOS PAGINA INDEX(INICIO)*/
+
+#banner{
+	max-width: 1000px;
+	width: 100%;
+	max-height: 300px;
+	height: 100%;
+	margin: auto;
+	}
+
+#principal
+
+{
+	max-width: 1000px;
+	width: 100%;
+	background-color: rgba(255,255,255);
+	min-height: 300px;
+	height: 100%;
+	margin: auto;
+}
+
+.cajap{
+	width: 33%;
+	float: left;
+	min-height: 300px;
+	height: 100%;
+	text-align: center;
+	}
+
+.cajap h1{
+	margin: 20px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+.cajap p{
+	text-align: justify;
+	margin: 20px;
+}
+
+.cajap img{
+	margin-bottom: 20px;
+}
+
+#bottom{
+	max-width: 1000px;
+	width: 100%;
+	background-color: rgba(25,25,25);
+	min-height: 200px;
+	margin: auto;
+	}
+
+.cajab{
+	width: 250px;
+	float: left;
+	min-height: 200px;
+	height: 100%;
+	text-align: center;
+	color: #FFFFFF;
+	text-align: center;
+	display: block;
+	margin: auto;
+}
+
+.cajab h1{
+	margin:20px;
+	text-align: center;
+	font-weight: 100;
+	font-size: 20px;
+
+}
+
+.cajab ul {
+	margin:20px;
+		
+}
+
+.cajab ul li{
+	
+	text-align: center;
+	font-size: 15px;
+	list-style-image: url(../imagenes/list.png);
+	list-style-position: inside;
+	margin: auto;
+}
+
+.cajab ul li a{
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.cajab ul li a:hover{
+	color: #EAEAEA;
+}
+
+.cajab img{
+	display: block;
+	margin:auto;
+	border: 4px solid #FFFFFF;
+	}
+
+.redes{	
+	text-align: left;
+	padding-left: 15px;
+}	
+
+.redes li{
+	float: left;
+	width: 40px;
+	height: 40px;
+	margin: 6px;
+	border-radius: 100%;
+}
+
+.redes li:first-child{
+	background-image: url(../imagenes/facebook.jpg);
+	background-size: cover;
+}
+
+.redes li:nth-child(2){
+	background-image: url(../imagenes/iconoGoogle.jpg);
+	background-size: cover;
+}
+
+.redes li:nth-child(3){
+	background-image: url(../imagenes/iconoPinterest.jpg);
+	background-size: cover;
+}
+
+.redes li:last-child{
+	background-image: url(../imagenes/iconoTwitter.jpg);
+	background-size: cover;
+}
+.redes li a{
+
+	padding:16px;
+}
+
+footer{
+	max-width: 1000px;
+	width: 100%;
+	background-color: rgba(0,0,0);
+	max-height: 60px;
+	height: 100%;
+	margin: auto;
+	text-align: center;
+	color: #FFFFFF;
+	padding: 20px 0px 20px 0px;
+}
+/*Final de ESTILOS PAGINA INDEX(INICIO) */
+
+/*ESTILOS PÁGINA QUIENES SOMOS */
+
+#quienessomos{
+	max-width: 1000px;
+	width: 100%;
+	min-height: 280px;
+	height: 100%;
+	margin: auto;
+	background-color: #EAEAEA;
+	padding: 20px 0px 0px 0px;
+	
+
+}
+#quienessomos h1{	
+	font-weight: bold;
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-bottom: 15px;
+	margin-left: 20px;
+	line-height: 2px;
+	border-left: 5px solid rgba(17,59,53);
+
+}
+
+#quienessomos hr{
+	margin: 10px auto;
+	width: 94%;
+	border:1px solid #C6C6C6;
+}
+
+#quienessomos img{
+	width: 300px;
+	border-radius: 6%;
+	box-shadow: 3px 5px 12px #000000;
+}
+
+#colaboradores{
+	
+	max-width: 1000px;
+	width: 100%;
+	background-color: #FFFFFF;
+	margin:auto;
+	text-align: center;
+	padding-top: 15px;
+}
+
+#colaboradores h1{
+	text-align: left;
+	font-weight: bold;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-top: 20px;
+	padding-bottom: 15px;	
+	margin-left: 20px;
+	line-height: 2px;
+	border-left: 5px solid rgba(17,59,53);
+}
+
+#colaboradores hr{
+	margin: 10px auto;
+	width: 95%;
+	border:1px solid #C6C6C6;
+}
+
+
+.infoint{
+	display: flex;
+	padding: 30px 30px 30px 0px;
+}
+.infoint p{
+	margin: 0px 30px;
+	text-align: justify;
+}
+
+.cajaimagend{
+	float: right;
+	margin-right: 35px;
+}
+
+.imagenarticulo{
+	
+	border-radius: 6%;
+	box-shadow: -2px 2px 6px #000000;
+}
+
+.infoint2{
+	display: flex;
+	padding: 30px 0px 30px 0px;
+	background-color: #FFFFFF;
+}
+.infoint2 p{
+	margin: 0px 30px 0px 30px;
+	text-align: justify;
+}
+
+.cajaimageni{
+	float: left;
+	margin:25px 20px 25px 35px;
+	vertical-align: middle;
+}
+
+.contenedor h3{
+	padding: 0px 0px 0px 30px;
+}
+
+.integrante{
+	margin-top: 20px;
+	width: 33%;
+	display: inline-block;
+}
+.integrante img{
+	width: 30%;
+	border-radius: 100%;	
+}
+.datosint{
+	margin:20px;
+}
+.datosint p{
+	text-align: left;
+}
+
+.inticono{
+	padding: 10px;
+	background:rgba(17,59,53);
+	border-radius: 100%;
+	margin: 5px;
+	color: #FFFFFF;
+}
+
+/*FINAL DE ESTILOS PÁGINA QUIENES SOMOS*/
+
+/* ESTILOS PAGINA PRODUCTOS*/
+
+#productos{
+	max-width: 1000px;
+	width: 100%;
+	min-height: 280px;
+	height: 100%;
+	margin: auto;
+	background-color: #FFFFFF;
+	padding: 20px 0px 20px 0px;
+	display: flex;
+	justify-content: space-between;
+}
+.titulo{
+	font-weight: bold;
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-bottom: 15px;
+	margin-left: 20px;
+	line-height: 2px;
+	border-left: 5px solid rgba(17,59,53);
+}
+
+.separador{
+	margin: 10px auto;
+	width: 94%;
+	border:1px solid #C6C6C6;
+}
+
+.cajaproducto{
+	width: 200px;
+	background-color: #FFFFFF;
+	display: inline-block;
+	float: flex;
+	justify-content: space-between;
+	margin:0px 25px 25px 25px;
+	box-shadow:3px 4px 3px #000000;
+}
+
+.cajaproducto img{
+	width: 200px;
+}
+
+.cajaproducto h2{
+	text-align: center;
+	background-color: rgba(17,59,53);
+	color: #FFFFFF;
+	font-size: 18px;
+	height: 40px;
+	line-height: 40px;
+}
+
+.cajaproducto h3{
+	padding: 20px 20px 0px 20px;
+	font-size: 16px;
+}
+.cajaproducto p{
+	padding: 0px 20px 0px 20px;
+	text-align: justify;
+}
+
+.botoninf{
+	margin:20px;
+	padding: 0px 20px 20px 20px;
+	background-color: rgba(17,59,53);
+	color: white;
+	height: 40px;
+	line-height: 40px;
+	border-radius: 5px;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+.botoninf a{
+	text-decoration: none;
+	color:#FFFFFF;
+}
+
+.botoninf:hover{	
+	background-color: #EAEAEA;
+	border:1px solid rgb(17,59,53);
+}
+
+.botoninf a:hover{
+	color: rgba(17,59,53);
+
+}
+/*FINAL DE ESTILOS PAGINA: PRODUCTOS*/
+
+/*ESTILOS PÁGINA: CONTACTO*/
+
+#ubicacion{
+	max-width: 1000px;
+	width: 100%;
+	max-height: 800px;
+	height: 100%;
+	margin: auto;
+	background-color: rgb(214, 214, 214);
+	display: flex;
+
+}
+.mapa{
+	padding: 50px;
+}
+.mapa iframe{
+	border-radius: 100%;
+	border:6px solid white;
+}
+
+.textoubicacion{
+	padding:100px 60px 102px 0px;
+}
+
+.textoubicacion h3{
+	color: rgba(17,59,53);
+}
+
+.datocontact{
+	font-weight: bold;
+}
+
+.cajatitulo{
+	max-width: 1000px;
+	width: 100%;
+    margin: 0px auto 0px;
+	background-color: #FFFFFF;
+	padding: 20px 0px 10px 0px;
+}
+
+.formulariocontac{
+	max-width: 1000px;
+	width: 100%;
+	margin:auto ;	
+	background-color: #FFFFFF;
+
+}
+.formulariocontac form{
+	padding: 30px;	
+}
+.formulariocontac label{
+	width: 50%;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.formulariocontac input[type=text], input[type=tel], input[type=email], textarea{
+	width: 40%;
+	vertical-align: middle;
+	padding:5px;
+	border-radius: 5px;
+	border:1px solid #000000;
+	font-size: 14px;
+	margin:8px 0;
+	overflow: hidden;
+	resize: none;
+}
+.formulariocontac input[type=submit]{
+	border-radius: 5px;
+	padding: 10px;
+	font-weight: bold;
+	font-size: 15px;
+	color: #FFFFFF;
+	border:1px solid rgb(17,59,53);
+	background-color: rgb(17,59,53);
+
+}
+
+.formulariocontac input[type=submit]:hover{
+	color: rgb(17,59,53);
+	background-color: #EAEAEA;
+	border:1px solid rgb(17,59,53);
+}
+
+/*FINAL DE ESTILOS DE PAGINA: CONTACTO*/

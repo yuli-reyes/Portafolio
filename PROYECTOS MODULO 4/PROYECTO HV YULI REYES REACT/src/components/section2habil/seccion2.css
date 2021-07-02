@@ -1,0 +1,166 @@
+#valoracion1{
+
+	max-width: 1024px;
+	width: 100%;
+	background-color: #FAFAFA;
+	margin: auto;
+	padding: 20px 20px 20px 20px
+}
+
+.cajageneral1{
+	display: flex;
+	flex-direction: column;
+}
+
+.cajatexto1{
+	max-width: 360px;
+	width: 100%;
+	margin: 25px auto;
+}
+
+.cajasubtitulo1{
+	margin: 0px  auto;
+	text-align: center;
+	background-color: #8FA6CD;
+}
+
+.cajasubtitulo1 h3{
+	font-weight: 500;
+}
+
+.cajaitems{
+	display: flex;
+	flex-direction: row;
+}
+
+.cajabarras{
+	margin-top: 30px;
+}
+
+.progress {
+  height: 35px;
+  margin-bottom: 10px;
+  display: flex;
+   overflow: hidden;
+  font-size: 16px;
+   background-color: #8FA6CD;
+   border-radius: .25rem;
+   color: white;
+}
+.bg-success{
+	background-color: #1E365C;
+	width: 100%;
+}
+
+.progress .skill {
+  line-height: 35px;
+  padding: 0;
+  margin: 0 0 0 20px;
+}
+
+.progress .skill .val {
+
+
+  float: right;
+  font-style: normal;
+  margin: 0 20px 0 0;
+}
+
+.progress-bar {
+  text-align: left;
+  transition: .9s;
+}
+
+.bg-info{
+
+	background-color: #1E365C;
+	width: 70%;
+}
+
+
+
+.cajavalores{
+	margin-left: auto;
+}
+
+.grupocirculos{
+	display: flex;
+	flex-direction: row;
+}
+
+.itemvalor{
+	margin-right: 40px;
+}
+
+.itemvalor p{
+	color: black;
+	margin-top: 7px;
+	justify-content: left;
+
+}
+
+.circulo{
+	width: 20px;
+	height: 20px;
+	-moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #EE495D;
+  margin-right: 15px;
+}
+
+
+.cajatexto2{
+	max-width: 360px;
+	width: 100%;
+	margin: 0px auto;
+}
+
+.cajasubtitulo2{
+	margin:25px auto;
+	text-align: center;
+	background-color: #CCA6FF;
+}
+
+.cajasubtitulo2 h3{
+	font-weight: 500;
+}
+
+.grupocirculos{
+	margin: 10px 0;
+}
+.circuloc{
+	background: #FFC1BB;
+	width: 20px;
+	height: 20px;
+	-moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.estrella{
+	width: 20px;
+	height: 20px;
+	margin-right: 15px;
+
+}
+.circulovacio{
+	background: #CCA6FF;
+	width: 20px;
+	height: 20px;
+	-moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  margin-right: 15px;
+
+}
+
+
+@media screen and (min-width:768px){
+
+	.cajageneral1{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+}

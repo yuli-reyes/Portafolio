@@ -1,0 +1,123 @@
+html,body{
+
+  height:100%;
+  width:100%;
+  overflow: hidden;
+  background: linear-gradient(180deg, #6665b4, #e8a292);
+}
+
+.menuop{
+
+	background-color: #06033e;
+}
+
+.cajam{
+	background:url(../imagenes/paisajemorado.jpg);
+	background-size: cover;	
+	background-repeat: no-repeat;
+}
+
+.cajam h1{
+
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+}
+
+.botones{
+
+	margin-top: 20px;
+}
+
+
+.btn-primary {
+  color: #fff;
+  font-weight: bold;
+  background: linear-gradient(70deg, #ff9a65, #a92ffb);
+  border:none;
+  font-weight: bold; 
+ }
+
+.btn-primary:hover {
+  color: #fff;
+  font-weight: bold; 
+  background: linear-gradient(70deg, #cc7050, #6e21aa);
+  border:none;
+}
+
+.btn-info {
+  color: #fff;
+  background: linear-gradient(70deg,#21e8c2 ,#461fea);
+  border:none;
+  font-weight: bold;
+}
+
+.btn-info:hover {
+  color: #fff;
+  background: linear-gradient(90deg, #25b79b,#2d15ba);
+  box-shadow:0px 0px 5px #fff;
+  border:none;
+}
+
+.btn-info:active {
+  color: #fff;
+  background: linear-gradient(90deg, #25b79b,#2d15ba);
+  box-shadow:0px 0px 5px #fff;
+  border:none;
+}
+
+.btn-info:focus {
+	color: #fff;
+	background: linear-gradient(90deg, #25b79b,#2d15ba);
+	box-shadow:0px 0px 5px #fff;
+}
+
+.btn-danger {
+  color: #fff;
+  background: linear-gradient(60deg, #2d006b,#982392);
+  border:none;
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
+}
+
+.btn-danger:hover {
+  color: #fff;
+  background: linear-gradient(60deg, #2745af,#963edb);
+}
+.btn-check:focus + .btn-danger, .btn-danger:focus {
+  color: #fff;
+  background-color: #bb2d3b;
+  box-shadow: 0 0 0 0.25rem rgba(225, 83, 97, 0.5);
+}
+
+.cajam h1{
+
+	text-align: center;
+	color: white;
+	padding-top: 20px;
+	text-shadow: 3px 3px 5px #000000; 
+
+}
+.card{
+	margin: 100px auto;
+	margin-top: 70px;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+  background-color: rgba(225,225,225,0.7);
+	background-clip: border-box;
+	border: 1px solid rgba(0, 0, 0, 0.125);
+	border-radius: 0.25rem;
+	box-shadow: 3px 3px 8px #000;
+  text-align: center;
+  font-weight: 500;
+
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: 1rem 1rem;
+}
+
+

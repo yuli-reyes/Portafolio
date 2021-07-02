@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8">
+	<title>Ejemplo de Ventana Modal</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	<div class="container-fluid">
+		<h1 class="titulopagina">Figuras Geométricas</h1>
+		<div class="row">
+
+<!---
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+  			Abrir Modal
+			</button>
+
+			<div class="modal" tabindex="-1" id="modal1">
+			  <div class="modal-dialog modal-fullscreen-md-down">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title">Modal title</h5>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+			        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+			        <button type="button" class="btn btn-primary">Save changes</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+			--->
+
+
+
+				<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
+				  <div class="card-header">Círculo</div>
+				  <div class="card-body">
+				    <h5 class="card-title">Área del Círculo</h5>
+				    <img src="imagenes/circulo.png" width="150px" class="card-imagen">
+				    <button type="button" class="btn btn-light" data-bs-target="#circulo" data-bs-toggle="modal">Calcular Area</button>
+				  </div>
+				</div>
+				<div class="card text-white bg-dark  mb-3" style="max-width: 18rem;">
+				  <div class="card-header">Cuadrado</div>
+				  <div class="card-body">
+				    <h5 class="card-title">Área del Cuadrado</h5>
+				    <img src="imagenes/cuadrado.png" width="150px" class="card-imagen">
+				    <button type="button" class="btn btn-light" data-bs-target="#cuadrado" data-bs-toggle="modal">Calcular Area</button>
+				  </div>
+				</div>
+				<div class="card text-white bg-info mb-3" style="max-width: 18rem;">
+				  <div class="card-header">Rectángulo</div>
+				  <div class="card-body">
+				    <h5 class="card-title">Área del Rectángulo</h5>
+				    <img src="imagenes/rectangulo.png" width="150px" class="card-imagen">
+				    <button type="button" class="btn btn-light" data-bs-target="#rectangulo" data-bs-toggle="modal">Calcular Area</button>
+				  </div>
+				</div>
+				<div class="card text-white bg-secondary  mb-3" style="max-width: 18rem;">
+				  <div class="card-header">Triángulo</div>
+				  <div class="card-body">
+				    <h5 class="card-title">Área del Triángulo</h5>
+				    <img src="imagenes/triangulo.png" width="150px" class="card-imagen">
+				    <button type="button" class="btn btn-light" data-bs-target="#triangulo" data-bs-toggle="modal">Calcular Area</button>
+				  </div>
+				</div>
+
+
+				<div class="modal" tabindex="-1" id="circulo">
+				  <div class="modal-dialog modal-dialog-centered modal-fullscreen-sm-down">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title">Area del Círculo</h5>
+				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				      </div>
+					<div class="modal-body">
+						<label for="radio" class="form-label">Ingrese el valor del radio</label>
+						<input type="number" name="radio" class="form-control" id="radio">
+
+						<p class="text-center mt-2" id="resultado">El resultado es...</p>
+
+					</div>
+				      <div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+						<button type="button" class="btn btn-danger" onclick="CalcularAreaCir()">Calcular</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+
+				<div class="modal fade" tabindex="-1" id="cuadrado">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title">Area del Cuadrado</h5>
+				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				      </div>
+				      <div class="modal-body">
+
+						<label for="lado" class="form-label">Ingrese el valor de uno de sus lados</label>
+						<input type="number" name="lado" class="form-control" id="lado">
+						<p class="text-center mt-2" id="resultadoc">El resultado es...</p>			  
+				        
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-danger" onclick="CalcularAreaCua()">Calcular</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+
+
+				<div class="modal fade" tabindex="-1" id="rectangulo">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title">Area del Rectángulo</h5>
+				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				      </div>
+				      <div class="modal-body">
+
+						<label for="base" class="form-label">Ingrese el valor de la base</label>
+						<input type="number" name="base" class="form-control" id="base">
+
+						<label for="altura" class="form-label">Ingrese el valor de la altura</label>
+						<input type="number" name="altura" class="form-control" id="altura">
+						<p class="text-center mt-2" id="resultador">El resultado es...</p>			  
+				        
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-danger" onclick="CalcularAreaRec()">Calcular</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+
+				<div class="modal fade" tabindex="-1" id="triangulo">
+				  <div class="modal-dialog">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title">Area del Triangulo</h5>
+				        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				      </div>
+				      <div class="modal-body">
+
+						<label for="baset" class="form-label">Ingrese el valor de la base</label>
+						<input type="number" name="baset" class="form-control" id="baset">
+
+						<label for="alturat" class="form-label">Ingrese el valor de la altura</label>
+						<input type="number" name="alturat" class="form-control" id="alturat">
+						<p class="text-center mt-2" id="resultadot">El resultado es...</p>			  
+				        
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				        <button type="button" class="btn btn-danger" onclick="calcularAreaTrian()">Calcular</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		</div>
+	</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
